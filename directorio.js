@@ -68,10 +68,9 @@ function showDetalles(tel){
 function cerrar(){
     let cerrar=document.getElementById("detallesAmigos");
     cerrar.addEventListener("click", quitar =>{
-        let detalles=document.getElementById("detallesAmigos");
+        detalles=document.getElementById("detallesAmigos");
         detalles.classList.add("oculto");
     })
-
 }
 
 btnCancelar.addEventListener("click",(event)=>{
