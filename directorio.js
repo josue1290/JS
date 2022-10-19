@@ -23,7 +23,7 @@ function pintar(){
         lista.innerHTML="";
         amigos.forEach((contacto,index)=>{
             let amigo=document.createElement("div");
-            amigo.innerHTML=`<p>${contacto.nombre}</p><button class="muestraDetalles"><input type="hidden" value="${contacto.telefono}"/>Detalles</button><button class="eliminarContacto" indice="${index}" onClick="return confirm('¿Estás seguro de eliminar a "${contacto.nombre}"?">Borrar</button>`;
+            amigo.innerHTML=`<p>${contacto.nombre}</p><button class="muestraDetalles"><input type="hidden" value="${contacto.telefono}"/>Detalles</button><button class="eliminarContacto" indice="${index}" onClick="return confirm('¿Estás seguro de eliminar a ${contacto.nombre}')">Borrar</button>`;
             lista.appendChild(amigo);
         });
         let botones=document.getElementsByClassName("muestraDetalles");
